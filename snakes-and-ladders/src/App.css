@@ -2,24 +2,66 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #00FFFF;
-  height: 70px;
-  padding: 10px;
-  color: white;
+  height: 30px;
+  padding: 5px;
+  color: black;
 }
 
 .App-title {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.App-intro {
-  font-size: large;
+
+.App-game-container {
+  width: 621px;
+  height: 564px;
+  margin: left;
+  position: relative;
+  float: left;
+}
+
+.App-board-container {
+  background-image: url("./snakesandladdersboard.jpg");
+  width: 564px;
+  height: 564px;
+  border: 1px solid black;
+  margin-left: 56px;
+}
+
+.history {
+  float: right;
+  margin-right: 201px;
+  width: 564px;
+  height: 564px;
+}
+
+.roll-button {
+  background-color: rgba(0,0,0,0.9);
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid rgba(244, 67, 54, 0.2);
+}
+
+.roll-button:hover {
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.rolled-dices {
+  width: 160px;
+  height: 70px;
+  margin: auto;
+  display: block;
 }
 
 @keyframes App-logo-spin {
@@ -27,6 +69,3 @@
   to { transform: rotate(360deg); }
 }
 
-.board-container {
-  margin-top: 15px;
-}
